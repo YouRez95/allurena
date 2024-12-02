@@ -4,17 +4,20 @@
 
 @font-face {
   font-family: font-italic;
-  src: url(IvyMode-SemiBoldItalic.ttf);
+  src: url('/fonts/IvyMode-SemiBoldItalic.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: font-regular;
-  src: url(IvyMode-Regular.ttf);
+  src: url('/fonts/IvyMode-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: font-light-light;
-  src: url(IvyMode-Light.ttf);
+  src: url('/fonts/IvyMode-Light.ttf');
+  font-display: swap;
 }
 
 body {
