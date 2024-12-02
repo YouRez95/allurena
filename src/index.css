@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: font-italic;
+  src: url(IvyMode-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: font-regular;
+  src: url(IvyMode-Regular.ttf);
+}
+
+@font-face {
+  font-family: font-light-light;
+  src: url(IvyMode-Light.ttf);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-light-light {
+  font-family: font-light-light;
+}
+
+h1,
+.as_h1 {
+  font-family: font-regular;
+  font-size: 110px;
+}
+
+h2,
+.as_h2 {
+  font-family: font-regular;
+  font-size: 66px;
+}
+
+h3,
+.as_h3 {
+  font-family: font-regular;
+  font-size: 48px;
+}
+
+.font-primary {
+  font-family: font-regular;
+}
+
+.logo {
+  font-family: font-italic, "Yellowtail", cursive;
+}
+
+.h-with-nav {
+  height: calc(100vh - 70px);
+}
+
+.circle-text {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border: 1.5px solid black;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-text span {
+  position: absolute;
+  transform-origin: center center;
+  white-space: nowrap;
+  font-weight: 600;
+  /* Adjust positions based on the number of characters */
+}
+
+.circle-text span:nth-child(1) {
+  transform: rotate(30deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(2) {
+  transform: rotate(45deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(3) {
+  transform: rotate(60deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(4) {
+  transform: rotate(75deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(5) {
+  transform: rotate(90deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(6) {
+  transform: rotate(105deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(7) {
+  transform: rotate(120deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(8) {
+  transform: rotate(210deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(9) {
+  transform: rotate(225deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(10) {
+  transform: rotate(240deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(11) {
+  transform: rotate(255deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(12) {
+  transform: rotate(270deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(13) {
+  transform: rotate(285deg) translateX(40px) rotateZ(90deg);
+}
+.circle-text span:nth-child(14) {
+  transform: rotate(300deg) translateX(40px) rotateZ(90deg);
+}
+
+.img-filter {
+  filter: contrast(90%); /* Adjust for your desired effect */
+}
+
+@screen lg {
+  .lg\:as_h2 {
+    font-family: font-regular;
+    font-size: 66px;
+  }
+}
+
+@screen xl {
+  .xl\:as_h1 {
+    font-family: font-regular;
+    font-size: 110px;
+  }
+}
+
+.scroll-animation {
+  animation: translateX 20s linear infinite;
+}
+
+@keyframes translateX {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-animation-testimonials {
+  animation: translateXReverse 40s linear infinite;
+}
+
+@keyframes translateXReverse {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
